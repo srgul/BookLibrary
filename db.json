@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "user@localhost.com",
+      "password": "$2a$10$T2HNJI6LolnMGIRzGfHFNuRAO4jADgD/75vewrQxHTV9uGXY9Iv0m",
+      "role": "user",
+      "id": 1
+    },
+    {
+      "email": "admin@booklary.com",
+      "password": "$2a$10$NGb9bR/g4rkIzW2BNgw7W.3x5C0eHSNw5XVbfGaqY2uBsCx1QQiVW",
+      "role": "admin",
+      "id": 2
+    }
+  ],
+  "books": [
+    {
+      "name": "Devlet",
+      "author": "Platon",
+      "desc": "Platon devlet kitabı",
+      "price": 100,
+      "id": 1
+    }
+  ]
+}

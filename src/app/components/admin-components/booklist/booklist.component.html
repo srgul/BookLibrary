@@ -1,0 +1,28 @@
+<div class="book-list">
+  <a routerLink="/admin/add-book">Yeni Kitap Ekle</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col">Price</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of bookService.books; let i = index ">
+      <th scope="row"> {{ book.id }} </th>
+      <td> {{book.name}} </td>
+      <td> {{book.author}} </td>
+      <td> {{book.desc}} </td>
+      <td> {{book.price}} </td>
+      <td>
+        <a mat-raised-button color="primary" class="btn btn-sm" (click)="openUpdateCardModal(book)" >Güncelle</a>
+        <a mat-raised-button color="warn" (click)="deleteBook(book.id)">Sil</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,27 @@
+<div class="col-md-12">
+  <div class="col-md-4 offset-md-4">
+    <div class="form">
+      <form [formGroup]="newBookForm" (ngSubmit)="onSubmit()">
+        <div class="form-field">
+          <label class="w-25" for="name">Kitap Adı:</label>
+          <input formControlName="name" class="form-control form-control-sm w-75" id="name" type="text">
+        </div>
+        <div class="form-field">
+          <label class="w-25" for="name">Yazarı:</label>
+          <input formControlName="author" class="form-control form-control-sm w-75" id="name" type="text">
+        </div>
+        <div class="form-field">
+          <label class="w-25" for="name">Açıklaması:</label>
+          <textarea formControlName="desc" class="form-control form-control-sm w-75" id="name" type="text"></textarea>
+        </div>
+        <div class="form-field">
+          <label class="w-25" for="name">Fiyatı:</label>
+          <input formControlName="price" class="form-control form-control-sm w-75" id="name" type="number">
+        </div>
+        <div class="form-field">
+          <button class="submit-btn" mat-button>Ekle</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
